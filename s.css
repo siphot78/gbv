@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+background-image:url(WhatsApp Image 2020-09-23 at 13.12.35.JPEG);
+transition: 0.2s ease;
+overflow:hidden;
+
+}
+.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+text-decoration:none;
+
+}
+
+.banner-1,.banner-2,.banner-3{
+height:100vh;
+width:100%;
+position:absolute;
+left:0;
+top:0;
+}
+
+
+.text-box{
+width:400px;
+position:absolute;
+top:200px;
+left:30px;
+color:#fff;
+}
+.text-box h1 {
+margin-bottom:40px;
+}
+
+.text-box p {
+font-size:14px;
+line-height:18px;
+margin-top:80px;
+
+}
+.text-box span{
+background:red;
+height:1px;
+width: 100px;
+position:absolute;
+left:0;
+
+}
+.banner-1{
+animation:slide1 12s linear infinite;
+}
+.banner-2{
+animation:slide2 12s linear infinite;
+}
+
+.banner-3{
+animation:slide3 12s linear infinite;
+}
+@keyframes slide1 {
+ 0%{
+ visibility:visible;
+ }
+ 25%{
+ visibility:hideen;
+ }
+ 50%{
+ visibility:hidden;
+ }
+ 75%{
+ visibility:hidden;
+ }
+100%{
+ visibility:visible;
+ }
+}
+@keyframes slide2 {
+ 0%{
+ visibility:hidden;
+ }
+ 25%{
+ visibility:hideen;
+ }
+ 50%{
+ visibility:visible;
+ }
+ 75%{
+ visibility:hidden;
+ }
+100%{
+ visibility:hidden;
+ }
+}
+@keyframes slide3 {
+ 0%{
+ visibility:hidden;
+ }
+ 25%{
+ visibility:visible;
+ }
+ 50%{
+ visibility:hidden;
+ }
+ 75%{
+ visibility:visible;
+ }
+100%{
+ visibility:hidden;
+ }
+}
+
+.menu{
+width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+background-image:url(WhatsApp Image 2020-09-23 at 13.12.35.JPG);
+background-color: #FFA500;
+}
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #add8e6;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    flex-basis: 20%;
+}
+.brand-title img{
+width: 150PX;
+
+}
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color:#708090;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.information{
+    width: 1000px;
+    height:100px;
+    position: absolute;
+top:50%;
+left:-10%;
+transform: translateY(-50%);
+}
+
+
+
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
+#login-box{
+position:relative;
+margin: 0;
+height:45000px;
+
+background-image:url(WhatsApp Image 2020-09-23 at 13.12.35.JPG);
+}
+.left-box{
+position:absolute;
+top:0;
+left:0;
+box-sizing:border-box;
+padding:40px ;
+width:180px;
+height:400px;
+}
+h1{
+  margin:0 0 20px 0;
+font-weight: 300;
+font-size:28px;
+text-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+color:white;
+
+}
+input[type="text"],input[type="password"]
+{
+display:block;
+box-sizing:border-box;
+margin-bottom:20px;
+padding:4px;
+width:150px;
+height: 32px;
+border: none;
+outline: none;
+border-bottom:1px solid #aaa;
+font-family:sans-serif;
+font-weight:400;
+font-size:15px;
+transition: 0.2s ease;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+}
+input[type="submit"]{
+margin-bottom:50px;
+weight:120px;
+heigt:50px;
+background:red;
+border:none;
+border-radius:2px;
+font-weight:bold;
+font-size:1.5rem;
+}
+input[type="submit"]: hover,input[type="submit"]:focus
+{
+background:lightskyblue;
+transition: 0.2s ease;
+}
+
+.right{
+position:absulote;
+top:0;
+right:;
+box-sizing:border-box;
+padding: 40px;
+width:300px;
+height:400px;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+}
+.right .signinwith
+{
+display:block;
+margin:40px;
+font-size:20px;
+color:#fff;
+text-align:center;
+text-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+
+}
+.social{
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+text-decoration:none;
+}
+.facebook{
+Background-color:mistyrose;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+
+}
+.twitter{
+Background-color:dark blue;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+text-decoration:none;
+
+}
+.google{
+Background-color:red;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+
+}
+.row{
+position:absulote;
+
+right:;
+box-sizing:border-box;
+padding: 40px;
+width:300px;
+height:400px;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+
+
+
+
+}
+ .ro{
+ 
+ align-items:center;
+ margin:0 0 20px 0;
+ font-weight: 300;
+ font-size:28px;
+ text-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+ 
+ border-radius:50%;
+ }
+ 
+
+
+.column{
+
+margin-bottom: 60px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:50px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+
+}
+home{
+
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+pointer:
+
+
+}
+
+
+@media (max-width: 2000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}

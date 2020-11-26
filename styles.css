@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+background: linear-gradient(to right,GREY #8ecdff);
+transition: 0.2s ease;
+
+}
+.menu{
+width: 100%;
+height: 100vh;
+position: relative;
+overflow: hidden;
+
+}
+
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    flex-basis: 20%;
+}
+.brand-title img{
+width: 150PX;
+
+}
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+.information{
+    width: 1000px;
+    height:100px;
+    position: absolute;
+top:50%;
+left:-10%;
+transform: translateY(-50%);
+}
+
+
+
+
+.cta {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid crimson;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	margin-top: 30px;
+	transition: .3s ease;
+	transition-property: background-color, color;
+}
+.cta:hover {
+	color: white;
+	background-color: crimson;
+}
+#login-box{
+position:relative;
+margin: 0;
+height:45000px;
+
+background: linear-gradient(to right,GREY, #8ecdff);
+}
+.left-box{
+position:absolute;
+top:0;
+left:0;
+box-sizing:border-box;
+padding:40px ;
+width:180px;
+height:400px;
+}
+h1{
+  margin:0 0 20px 0;
+font-weight: 300;
+font-size:28px;
+text-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+
+}
+input[type="text"],input[type="password"]
+{
+display:block;
+box-sizing:border-box;
+margin-bottom:20px;
+padding:4px;
+width:150px;
+height: 32px;
+border: none;
+outline: none;
+border-bottom:1px solid #aaa;
+font-family:sans-serif;
+font-weight:400;
+font-size:15px;
+transition: 0.2s ease;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+}
+input[type="submit"]{
+margin-bottom:28px;
+weight:120px;
+heigt:32px;
+background:red;
+border:none;
+border-radius:2px;
+}
+input[type="submit"]: hover,input[type="submit"]:focus
+{
+background:blue;
+transition: 0.2s ease;
+}
+
+.right{
+position:absulote;
+top:0;
+right:;
+box-sizing:border-box;
+padding: 40px;
+width:300px;
+height:400px;
+box-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+}
+.right .signinwith
+{
+display:block;
+margin:40px;
+font-size:20px;
+color:#fff;
+text-align:center;
+text-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+
+
+}
+.social{
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+bordee-shadow:0 2px 4px rgba(0, 0, 0, 0.6);;
+}
+.facebook{
+Background-color:blue;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+
+}
+.twitter{
+Background-color:dark blue;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+
+}
+.google{
+Background-color:red;
+margin-bottom: 20px;
+width: 220px;
+height:36px;
+border:none;
+border-radius:2px;
+font-family:sans-serif;
+font-weight:500;
+border-shadow:0 2px 4px rgba(0, 0, 0, 0.6);
+transition: 0.2s ease;
+transition: uppercase;
+
+}
+
+
+@media (max-width: 2000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
